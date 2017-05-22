@@ -54,12 +54,14 @@
             this.btnBuscar = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txtNomeBusca = new MetroFramework.Controls.MetroTextBox();
+            this.lblEndereco = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.lblEndereco);
             this.metroPanel1.Controls.Add(this.btnExcluir);
             this.metroPanel1.Controls.Add(this.txtID);
             this.metroPanel1.Controls.Add(this.btnGravar);
@@ -484,6 +486,15 @@
             this.txtNomeBusca.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNomeBusca.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // lblEndereco
+            // 
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Location = new System.Drawing.Point(14, 151);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(67, 19);
+            this.lblEndereco.TabIndex = 0;
+            this.lblEndereco.Text = "Endereço:";
+            // 
             // frmCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,6 +540,7 @@
         private MetroFramework.Controls.MetroButton btnGravar;
         private System.Windows.Forms.Label txtID;
         private MetroFramework.Controls.MetroButton btnExcluir;
+        private MetroFramework.Controls.MetroLabel lblEndereco;
     }
 }
 
